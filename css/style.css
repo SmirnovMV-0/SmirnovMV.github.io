@@ -1,0 +1,34 @@
+body{
+    background-color: #9b9431;
+    margin-left: 50px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #e2d848;
+    display: flex;
+}
+footer{
+    background-image: url(../back_f.jpg);
+    height: 100px;
+}
+aside{
+    background-image: url(../aside.jpg);
+    height: 100%;
+    width: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+table{
+    min-width: 50%;
+    border-color:aqua;
+    text-align: center;
+}
+hmapper{
+    width:1px;
+}
