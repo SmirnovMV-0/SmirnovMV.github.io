@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <link rel="icon" href="../Images/maple.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/storage_script.js" defer></script>
+    <script src="../js/theme_script.js" defer></script>
+</head>
+<body>
+  <header class="header_wrap">
+      <section class="header">
+          <a href="../index.html"><img src="../Images/Maple_Leaves.jpg" align="left" height="200"></a>
+          <nav class="menu_nav">
+              <a href="../index.html#0">Обо мне</a>
+              <a href="../index.html#1">Мои черты</a>
+              <a href="../index.html#2">Авторство</a>
+              <a href="../pages/1.html">Резюме</a>
+              <a href="../pages/contacts.html">Контакты</a>
+              <a href="../pages/gallery.html">Галерея</a>
+              <a href="../pages/example_storage.html">Example storage</a>
+              <a href="../pages/timer.html">Таймер Помодоро</a>
+          </nav>
+          <button id="themeToggle">Переключить тему</button>
+      </section>
+  </header>
+    <!--
+    <script>
+        localStorage.setItem('data', 5);
+        localStorage.setItem('data1', 6);
+        console.log(localStorage.getItem('data'));
+        localStorage.removeItem('data');
+        /*localStorage.clear();*/
+    </script>
+    <script>
+        const a = [3,8,5,9];
+        localStorage.setItem('a', a);
+        let b = localStorage.getItem('a');
+        console.log(typeof(b));
+        localStorage.setItem('a', JSON.stringify(a));
+        b = JSON.parse(localStorage.getItem('a'));
+        console.log(b[1], typeof(b));
+        /*localStorage['ключ'] = "Значение";
+        localStorage["ключ"];
+        delete localStorage["ключ"];*/
+        const c = {hello:5,
+                   k:2,
+                   4:'hi'};
+        localStorage['c'] = JSON.stringify(c);
+        b = JSON.parse(localStorage['c']);
+        console.log(b, typeof(b));
+    </script>
+    <section>
+        <textarea id="textArea"></textarea>
+        <button type="" name="button" onclick="">Clear</button>
+    </section>
+    <script>
+        document.getElementById('textArea').oninput = function text(){
+            localStorage.setItem('savetext', document.getElementById('textArea').value);
+        }
+        document.getElementById('textArea').value = localStorage.getItem('savetext');
+    </script>-->
+    <section class="main6">
+      <div>
+        <form action="#" method="get" id="form" class="form2">
+          <input type="text" id="item" class="input_text">
+          <button type="submit" name="button" class="input_button">Add</button>
+        </form>
+        <h1>To do</h1>
+        <ul></ul>
+        <button type="button" name="button" id="button">Clear</button>
+      </div>
+    </section>
+    <footer id="2">
+      <ul align="left" type="square">
+        <li>Сайт Максима</li>
+      </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <link rel="icon" href="../Images/maple.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/form_script.js" defer></script>
+    <script src="../js/theme_script.js" defer></script>
+</head>
+<body>
+  <header class="header_wrap">
+      <section class="header">
+          <a href="../index.html"><img src="../Images/Maple_Leaves.jpg" align="left" height="200"></a>
+          <nav class="menu_nav">
+              <a href="../index.html#0">Обо мне</a>
+              <a href="../index.html#1">Мои черты</a>
+              <a href="../index.html#2">Авторство</a>
+              <a href="../pages/1.html">Резюме</a>
+              <a href="../pages/contacts.html">Контакты</a>
+              <a href="../pages/gallery.html">Галерея</a>
+              <a href="../pages/example_storage.html">Example storage</a>
+              <a href="../pages/timer.html">Таймер Помодоро</a>
+          </nav>
+          <button id="themeToggle">Переключить тему</button>
+      </section>
+  </header>
+
+    <main>
+      <section class="main5">
+        <section>
+            <h3>Я в социальных сетях:</h3>
+            <a>
+                <img src="../images/vk.png" height="64">
+            </a>
+            <a>
+                <img src="../images/git.png" height="64">
+            </a>
+            <a>
+                <img src="../images/inst.png" height="64">
+            </a>
+        </section>
+        <section>
+            <h3>Моя электронная почта:</h3>
+            <address>smv.22@uni-dubna.ru</address>
+        </section>
+        <section>
+            <h3>Мой номер телефона:</h3>
+            <address>+79201234567</address>
+        </section>
+        <section>
+            <h3>Форма для связи</h3>
+            <form action="#" method="get" id="form">
+                <fieldset>
+                    <div id="_Name">
+                        <label>Ваше имя:</label>
+                        <input type="text" placeholder="Введите ФИО">
+                    </div>
+                    <div id="_Email">
+                        <label>Адрес почты:</label>
+                        <input type="email">
+                    </div>
+                    <div id="_Tel">
+                        <label>Номер телефона:</label>
+                        <input type="tel">
+                    </div>
+                    <div id="_Date">
+                        <label>Дата встречи:</label>
+                        <input type="date" value="Дата">
+                    </div>
+                    <div id="_Url">
+                        <label>Введите URL-адрес:</label>
+                        <input type="url">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Добавить способ ответа:</legend>
+
+                    <label><input type="radio" name="svaz" id="meet" value="meet_">Назначить встречу</label><br>
+                    <label><input type="radio" name="svaz" id="tele" value="tel_">Телефон</label><br>
+                    <label><input type="radio" name="svaz" id="email" value="email_">Почта</label><br>
+                    <label><input type="radio" name="svaz" id="other" value="other_">Другое</label><br>
+                    <label><input type="radio" name="svaz" id="no-answer" value="none_">Не надо отвечать</label><br>
+
+                    <select id="locationSelect">
+                        <option>
+                            <label>Работа</label>
+                        </option>
+                        <option value="study_select">
+                            <label>Учёба</label>
+                        </option>
+                        <option>
+                            <label>Личное</label>
+                        </option>
+                        <option>
+                            <label>Другое</label>
+                        </option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset id="_Study">
+                    <legend>Что по учёбе?</legend>
+                    <label><input type="checkbox" name="study" id="help" value="Помощь">Нужна помощь</label><br>
+                    <label><input type="checkbox" name="study" id="colab" value="Сотрудничество">Сотрудничество</label><br>
+                    <label><input type="checkbox" name="study" id="answers" value="Ответы">Ответы и готовые задания</label><br>
+                    <label><input type="checkbox" name="study" id="session" value="Сессия">Подготовка к сессии</label><br>
+                </fieldset>
+
+                <section>
+                    <div>Ваше сообщение:</div>
+                    <div>
+                        <textarea cols="40" rows="10" placeholder="Введите вопрос или предложение"></textarea>
+                    </div>
+                </section>
+
+                <div class="align-center">
+                    <input type="submit" value="Отправить" class="input-text">
+                    <input type="reset" value="Очистить форму" class="input-text">
+                </div>
+            </form>
+        </section>
+
+        <footer id="2">
+          <ul align="left" type="square">
+            <li>Сайт Максима</li>
+          </ul>
+        </footer>
+      </section>
+    </main>
+
+</body>
+</html>

@@ -6,6 +6,7 @@
     <title>Сайт</title>
     <link rel="icon" href="../Images/maple.png">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/timer_script.js" defer></script>
     <script src="../js/theme_script.js" defer></script>
 </head>
 <body>
@@ -25,16 +26,25 @@
           <button id="themeToggle">Переключить тему</button>
       </section>
   </header>
-    <main>
-      <section class="main2">
-        <table border="5" align="center">
-            <tr><th><h2>Год</h2></th><th><h2>Место</h2></th><th><h2>Умения</h2></th></tr>
-            <tr><th>2004</th><th>Ярославль</th><th>Родился</th></tr>
-            <tr><th>2011</th><th>Школа №89</th><th>Учился</th></tr>
-            <tr><th>2022</th><th>Университет "Дубна"</th><th>coming soon...
 
-            </th></tr>
-        </table>
+    <main>
+      <section class="main6">
+        <div class="container">
+            <div class="section-container">
+                <button type="button" name="focus_button" id="focus" class="btn btn-timer btn-focus button">Работа</button>
+                <button type="button" name="shortbreak_obutton" id="shortbreak" class="btn btn-shortbreak button">Отдых</button>
+                <button type="button" name="longbreak_button" id="longbreak" class="btn btn-longbreak button">Долгий отдых</button>
+            </div>
+
+            <div class="time-btn-container">
+                <span id='time' class="time-container">00:00</span>
+                <div class="btn-container">
+                    <button type="button" name="start_button" id='btn-start' class='show button'>Начать</button>
+                    <button type="button" name="pause_button" id='btn-pause' class='hidden button'>Пауза</button>
+                    <button type="button" name="reset_button" id='btn-reset' class='hidden button'>Рестарт</button>
+                </div>
+            </div>
+        </div>
       </section>
     </main>
     <footer id="2">
@@ -42,5 +52,6 @@
         <li>Сайт Максима</li>
       </ul>
     </footer>
+
 </body>
 </html>
